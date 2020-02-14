@@ -1,0 +1,28 @@
+{
+	"name": "huit-tech-talk-2020",
+	"version": "1.0.0",
+	"description": "Demo app for HUIT Tech Talk 2020",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"postinstall": "cd client;npm install",
+		"build": "cd ./client;npm install;npm run build",
+		"dev:canvas": "node ./node_modules/caccl/canvas/startPartialSimulation",
+		"dev:server": "export DEV=true;npm start",
+		"dev:client": "export DEV=true;cd client;npm start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gabeabrams/huit-tech-talk-2020.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gabeabrams/huit-tech-talk-2020/issues"
+	},
+	"homepage": "https://github.com/gabeabrams/huit-tech-talk-2020#readme",
+	"dependencies": {
+		"caccl": "^1.1.11"
+	}
+}
